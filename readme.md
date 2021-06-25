@@ -5,6 +5,12 @@
 
 This is a LTI stack written in Go that handles a lot of the boilerplate so that you can get to writing logic for your app.
 
+*TODO*:
+- [ ] Deep Linking
+- [ ] Oauth2 token dance
+- [ ] Canvas API integration
+- [ ] Deploy process
+
 ## Setup
 
 To get set up, follow these steps in order.
