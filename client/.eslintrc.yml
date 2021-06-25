@@ -1,0 +1,56 @@
+---
+env:
+  browser: true
+  es6: true
+  jest: true
+extends: 
+  - atomicjolt
+  - 'plugin:@typescript-eslint/recommended'
+parser: '@typescript-eslint/parser'
+plugins:
+  - react
+  - jsx-a11y
+  - import
+  - '@typescript-eslint'
+globals:
+  describe: false
+  beforeAll: false
+  beforeEach: false
+  afterEach: false
+  it: false
+  expect: false
+  xit: false
+  spyOn: false
+  jasmine: false
+  module: false
+  jest: false
+  Rollbar: false
+  __DEV__: false
+  MathJax: false
+  require: false
+rules: {
+  'import/no-extraneous-dependencies': [
+      'error',
+    {
+      devDependencies: [
+          '**/*.stories.tsx',
+      ],
+    },
+  ],
+  "import/extensions": [2, {
+    "stories": "always"
+  } ],
+
+  # https://stackoverflow.com/questions/63961803/eslint-says-all-enums-in-typescript-app-are-already-declared-in-the-upper-scope
+  # If the above link is dead, here is an explanation of this no-shadow rule:
+  #   Eslint has a bug where all enum's are interpreted as being defined twice, which invokes the "no-shadow" rule. If you
+  #   only use the rule from the typescript-eslint plugin then this error is fixed. This disables the normal rule and enables
+  #   the eslint-plugin rule. The same applies for the "no-use-before-define" rule.
+  "no-shadow": "off",
+  "no-use-before-define": "off",
+  "@typescript-eslint/no-shadow": ["error"],
+  "@typescript-eslint/no-use-before-define": ["error"],
+  
+  "@typescript-eslint/no-empty-interface": "off",
+  "@typescript-eslint/no-empty-function": "off"
+}

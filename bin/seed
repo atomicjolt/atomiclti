@@ -1,0 +1,3 @@
+#!/bin/bash
+go run seeds/main.go
+LTI_ENV=test go run seeds/main.go

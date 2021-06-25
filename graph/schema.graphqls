@@ -1,0 +1,13 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+scalar Time
+
+type Empty {
+  dummy: Int!
+}
+
+type Query {
+  helloWorld: String!
+}

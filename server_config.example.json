@@ -1,0 +1,26 @@
+{
+  "development": {
+    "db_user": "your_username",
+    "db_host": "localhost:5432",
+    "db_password": "",
+    "session_ssl_mode": "disable",
+    "session_secret": "de932712479575210cc1883f88f18cf1156ba43674c8766cd435c906b18cee8b880da409d7ed5d35c6d2b6c7af5313e8e8a66d903b4e79bba0336bef660d8b75",
+    "database": "atomiclti_dev",
+    "server_port": "8888",
+    "client_id": "43460000000000439",
+    "auth0_client_id": "atomiclti",
+    "auth0_client_secret": "1387643cd80e329486403caa513350a71c4cfb9562e406a90deae556119dbedbcea4a69490eeda42f39582f66ee723231470754ad86c2ea5a396483d00fc7eb9"
+  },
+  "test": {
+    "db_user": "your_username",
+    "db_host": "localhost:5432",
+    "db_password": "",
+    "session_ssl_mode": "disable",
+    "session_secret": "de932712479575210cc1883f88f18cf1156ba43674c8766cd435c906b18cee8b880da409d7ed5d35c6d2b6c7af5313e8e8a66d903b4e79bba0336bef660d8b75",
+    "database": "atomiclti_test",
+    "server_port": "8888",
+    "client_id": "43460000000000439",
+    "auth0_client_id": "atomiclti",
+    "auth0_client_secret": "1387643cd80e329486403caa513350a71c4cfb9562e406a90deae556119dbedbcea4a69490eeda42f39582f66ee723231470754ad86c2ea5a396483d00fc7eb9"
+  }
+}

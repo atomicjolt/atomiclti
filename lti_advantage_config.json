@@ -1,0 +1,40 @@
+{
+  "title": "Atomic LTI",
+  "scopes": [
+    "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem"
+  ],
+  "extensions": [
+    {
+      "platform": "canvas.instructure.com",
+      "domain": "https://{domain}",
+      "tool_id": "atomiclti",
+      "privacy_level": "public",
+      "settings": {
+        "text": "Atomic Insight",
+        "icon_url": "https://{domain}/atomiclti.png",
+        "selection_width": 500,
+        "selection_height": 500,
+        "placements": [
+          {
+            "placement": "course_navigation",
+            "target_link_uri": "https://{domain}/lti_launches",
+            "text": "Atomic Insight",
+            "enabled": true,
+            "icon_url": "https://{domain}/atomiclti.png",
+            "message_type": "LtiResourceLinkRequest",
+            "canvas_icon_class": "icon-lti"
+          }
+        ]
+      }
+    }
+  ],
+  "target_link_uri": "https://{domain}/lti_launches",
+  "oidc_initiation_url": "https://{domain}/oidc_init",
+  "public_jwk": "",
+  "description": "LTI App",
+  "custom_fields": {
+    "canvas_sis_id": "$Canvas.user.sisid",
+    "canvas_user_id": "$Canvas.user.id",
+    "canvas_api_domain": "$Canvas.api.domain"
+  }
+}

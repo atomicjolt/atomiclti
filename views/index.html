@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using Atomic LTI" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    {{ range .Manifest.Entrypoints.Styles }}
+      <link href="https://atomiclti.atomicjolt.xyz/{{ . }}" rel="stylesheet">
+      </link>
+    {{ end }}
+    <script type="text/javascript">
+      window.LAUNCH_TOKEN = "{{ .LaunchTokenSigned }}";
+    </script>
+    <title>LTI App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    {{ range .Manifest.Entrypoints.Scripts }}
+      <script src="https://atomiclti.atomicjolt.xyz/{{ . }}" type="text/javascript">
+      </script>
+    {{ end }}
+  </body>
+</html>

@@ -1,0 +1,3 @@
+#!/bin/bash
+go run migrations/*.go "$@"
+LTI_ENV=test go run migrations/*.go "$@"

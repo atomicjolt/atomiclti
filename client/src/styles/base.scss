@@ -1,0 +1,40 @@
+// Base scss styles
+
+// Lato Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// Material Icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+
+:root, #root {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+#root {
+  margin: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// *:focus {
+//   outline: 1px solid pink !important;
+//   background: pink !important;
+// }

@@ -1,0 +1,11 @@
+@mixin shadow($blur, $opacity) {
+  box-shadow: 0 3px $blur rgba(0, 0, 0, $opacity);
+}
+
+@mixin stack-top-bottom {
+  @for $i from 1 through 10 {
+     & > *:nth-child(#{$i}) {
+       z-index: #{10 - $i};
+     }
+  }
+}

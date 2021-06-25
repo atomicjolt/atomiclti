@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "=== START OF GO VET ==="
+# exit status is always 0
+go vet ./...
+echo "=== END OF GO VET ==="
+go fmt ./...
+
+echo "=== START OF GO LINT ==="
+golint -set_exit_status ./...
+status=$?
+echo "=== END OF GO LINT ==="
+
+exit $status
